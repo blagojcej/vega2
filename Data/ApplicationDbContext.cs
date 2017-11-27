@@ -10,6 +10,13 @@ namespace vega2.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        #region Properties
+
+        public DbSet<Make> Makes { get; set; }
+        public DbSet<Model> Models { get; set; }        
+
+        #endregion
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

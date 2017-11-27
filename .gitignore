@@ -12,7 +12,8 @@
 /obj
 
 # IDEs and editors
-/.idea
+../.idea
+.idea
 .project
 .classpath
 .c9/
@@ -33,6 +34,7 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
+../npm-debug.log
 testem.log
 /typings
 

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using vega2.Data;
 using vega2.Models;
 using vega2.Services;
+using AutoMapper;
 
 namespace vega2
 {
@@ -26,6 +27,8 @@ namespace vega2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper();
+
             services.Configure<SecretSettings>(Configuration);
 
             services.AddDbContext<ApplicationDbContext>(options =>

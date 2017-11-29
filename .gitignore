@@ -10,6 +10,7 @@
 ../node_modules
 /bin
 /obj
+/wwwroot
 
 # IDEs and editors
 ../.idea
@@ -37,6 +38,7 @@ npm-debug.log
 ../npm-debug.log
 testem.log
 /typings
+../package-lock.json
 
 # e2e
 /e2e/*.js

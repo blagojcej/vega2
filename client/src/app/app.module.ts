@@ -1,3 +1,5 @@
+import { HttpModule } from '@angular/http';
+import { MakeService } from './services/make.service';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,11 +16,14 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot([
       {path:'vehicles/new', component:VehicleFormComponent}
     ])
   ],
-  providers: [],
+  providers: [
+    MakeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

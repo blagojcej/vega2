@@ -10,6 +10,7 @@ namespace vega2.Mapping
         {
             CreateMap<Make, MakeViewModel>();
             CreateMap<Model, ModelViewModel>();
+            CreateMap<Feature, FeatureViewModel>();
         }
     }
 }
